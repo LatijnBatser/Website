@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <h1>LATIJNBATSER 1/3</h1>
-        <p>Lid van de 3 LATIJNBATSERS van het HHC</p>
-        <marquee>Titae gigantescae</marquee>
-<img src="pencilspin.gif" style="position: absolute; bottom: 30px; right: 50px; width: 80px;">
-<img src="pentagram.png" style="position: absolute; bottom: 150px; left: 50px; width: 150px;"  </body>
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>LATIJNBATSER 1/3</h1>
+    <p>Lid van de 3 LATIJNBATSERS van het HHC</p>
+    <marquee>Titae gigantescae</marquee>
+
+    <img src="pencilspin.gif" style="position: absolute; bottom: 30px; right: 50px; width: 80px;">
+
+    <!-- This is your default pentagram -->
+    <img id="pentagram" 
+         src="pentagram.png" 
+         style="position: absolute; bottom: 150px; left: 50px; width: 150px;">
+
+    <script>
+        const image = document.getElementById('pentagram');
+        image.addEventListener('mouseover', () => {
+            image.src = 'pentagram_bloody_red_transparent.png';
+        });
+        image.addEventListener('mouseout', () => {
+            image.src = 'pentagram.png';
+        });
+    </script>
+</body>
 </html>
