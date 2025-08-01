@@ -1,13 +1,16 @@
+
 body {
     text-align: center;
     background-image: url("saftextr.jpg");
-    color: rgb(150, 88, 168)
+    color: rgb(150, 88, 168);
 }
 
-h1 {            text-shadow:
-                -1px 0 0 #3b0556, /* Left shadow */
-                1px 0 0 #3b0556, /* Right shadow */
-                0 -1px 0 #3b0556, /* Top shadow */
-                0 1px 0 #3b0556; /* Bottom shadow */
-            }
-h3{}
+h1 {
+    text-shadow:
+        -1px 0 0 #3b0556,
+         1px 0 0 #3b0556,
+         0 -1px 0 #3b0556,
+         0 1px 0 #3b0556;
+}
+h2  {padding-top: 20%; color: rgb(155, 2, 2);}
+h3  {padding-top: 4%;}
